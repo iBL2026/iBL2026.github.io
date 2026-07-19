@@ -1,0 +1,322 @@
+/*=========================================
+        DARKMODE.CSS
+        Integrative Biology Laboratory
+==========================================*/
+
+/* Enable smooth transition */
+
+body,
+header,
+section,
+footer,
+.card,
+.project,
+.member,
+.publication,
+.news-card,
+input,
+textarea,
+button,
+nav,
+.stat{
+
+    transition:all .35s ease;
+
+}
+
+/*=========================================
+        DARK MODE VARIABLES
+==========================================*/
+
+body.dark{
+
+    --primary:#2ECC71;
+    --secondary:#27AE60;
+    --accent:#58D68D;
+
+    --dark:#F9FAFB;
+    --light:#111827;
+
+    --text:#E5E7EB;
+    --gray:#1F2937;
+
+    background:#0F172A;
+    color:var(--text);
+
+}
+
+/*=========================================
+            HEADER
+==========================================*/
+
+body.dark header{
+
+    background:#111827;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+body.dark .logo span,
+
+body.dark nav ul li a{
+
+    color:#F9FAFB;
+
+}
+
+body.dark nav ul li a:hover{
+
+    color:var(--primary);
+
+}
+
+body.dark .menu-btn{
+
+    color:#fff;
+
+}
+
+/*=========================================
+            HERO
+==========================================*/
+
+body.dark .hero{
+
+    background:
+    linear-gradient(rgba(5,15,25,.82),
+    rgba(5,15,25,.82)),
+    url("../images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+/*=========================================
+            SECTIONS
+==========================================*/
+
+body.dark section{
+
+    background:#0F172A;
+
+}
+
+body.dark .research,
+
+body.dark .gallery,
+
+body.dark .contact{
+
+    background:#111827;
+
+}
+
+body.dark .publications{
+
+    background:#1F2937;
+
+}
+
+/*=========================================
+            ABOUT
+==========================================*/
+
+body.dark .about-content h2,
+
+body.dark .section-title{
+
+    color:#F9FAFB;
+
+}
+
+body.dark .about-content p{
+
+    color:#D1D5DB;
+
+}
+
+/*=========================================
+        CARDS
+==========================================*/
+
+body.dark .card,
+
+body.dark .project,
+
+body.dark .member,
+
+body.dark .publication,
+
+body.dark .news-card{
+
+    background:#1F2937;
+
+    color:#F3F4F6;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+
+}
+
+body.dark .card h3,
+
+body.dark .project h3,
+
+body.dark .member h3,
+
+body.dark .publication h3,
+
+body.dark .news-card h3{
+
+    color:#fff;
+
+}
+
+body.dark .card p,
+
+body.dark .project p,
+
+body.dark .member p,
+
+body.dark .publication p,
+
+body.dark .news-card p{
+
+    color:#D1D5DB;
+
+}
+
+/*=========================================
+        STATS
+==========================================*/
+
+body.dark .stats{
+
+    background:#111827;
+
+}
+
+/*=========================================
+        BUTTONS
+==========================================*/
+
+body.dark .btn{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+body.dark .btn:hover{
+
+    background:var(--secondary);
+
+}
+
+body.dark .btn-outline{
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+}
+
+body.dark .btn-outline:hover{
+
+    background:#fff;
+
+    color:#111827;
+
+}
+
+/*=========================================
+        CONTACT FORM
+==========================================*/
+
+body.dark input,
+
+body.dark textarea{
+
+    background:#374151;
+
+    color:#fff;
+
+}
+
+body.dark input::placeholder,
+
+body.dark textarea::placeholder{
+
+    color:#C7D2FE;
+
+}
+
+/*=========================================
+        FOOTER
+==========================================*/
+
+body.dark footer{
+
+    background:#020617;
+
+    color:#CBD5E1;
+
+}
+
+/*=========================================
+        SCROLLBAR
+==========================================*/
+
+body.dark ::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+body.dark ::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+body.dark ::-webkit-scrollbar-thumb{
+
+    background:#2ECC71;
+
+}
+
+body.dark ::-webkit-scrollbar-thumb:hover{
+
+    background:#27AE60;
+
+}
+
+/*=========================================
+        IMAGES
+==========================================*/
+
+body.dark .gallery img,
+
+body.dark .project img,
+
+body.dark .member img,
+
+body.dark .about-image img{
+
+    filter:brightness(.92);
+
+}
+
+/*=========================================
+        SELECTION
+==========================================*/
+
+body.dark ::selection{
+
+    background:#2ECC71;
+
+    color:#fff;
+
+}
