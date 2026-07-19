@@ -1,0 +1,935 @@
+/*==================================================
+    INTEGRATIVE BIOLOGY LAB WEBSITE
+    style.css
+==================================================*/
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*====================
+    CSS VARIABLES
+=====================*/
+
+:root{
+
+    --primary:#0B5D3B;
+    --secondary:#1F8A5B;
+    --accent:#56C596;
+
+    --dark:#111827;
+    --light:#F8FAFC;
+
+    --white:#ffffff;
+
+    --text:#374151;
+
+    --gray:#f1f5f9;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    --transition:.35s ease;
+
+}
+
+/*====================
+    RESET
+=====================*/
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:var(--text);
+
+    background:#fff;
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+section{
+
+    padding:90px 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:2.4rem;
+
+    color:var(--dark);
+
+    margin-bottom:60px;
+
+    position:relative;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    width:70px;
+
+    height:4px;
+
+    background:var(--primary);
+
+    display:block;
+
+    margin:15px auto;
+
+    border-radius:30px;
+
+}
+
+/*====================
+    BUTTON
+=====================*/
+
+.btn{
+
+    display:inline-block;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    padding:14px 34px;
+
+    border-radius:50px;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+    box-shadow:var(--shadow);
+
+}
+
+.btn:hover{
+
+    background:var(--secondary);
+
+    transform:translateY(-4px);
+
+}
+
+.btn-outline{
+
+    background:transparent;
+
+    border:2px solid #fff;
+
+    margin-left:15px;
+
+}
+
+.btn-outline:hover{
+
+    background:#fff;
+
+    color:var(--primary);
+
+}
+
+/*====================
+    HEADER
+=====================*/
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#fff;
+
+    box-shadow:var(--shadow);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    z-index:999;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo h2{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.logo span{
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    color:var(--dark);
+
+}
+
+nav ul{
+
+    display:flex;
+
+    gap:28px;
+
+}
+
+nav ul li a{
+
+    color:var(--dark);
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:var(--primary);
+
+}
+
+.menu-btn{
+
+    display:none;
+
+    font-size:1.6rem;
+
+    cursor:pointer;
+
+}
+
+/*====================
+    HERO
+=====================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:#fff;
+
+    background:
+    linear-gradient(rgba(10,25,35,.72),
+    rgba(10,25,35,.72)),
+    url("../images/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    padding:120px 20px;
+
+}
+
+.hero-content{
+
+    max-width:850px;
+
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:1.25rem;
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+/*====================
+    ABOUT
+=====================*/
+
+.about .container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about-image{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.about-image img{
+
+    transition:.5s;
+
+}
+
+.about-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.about-content h2{
+
+    font-size:2.3rem;
+
+    margin-bottom:20px;
+
+    color:var(--dark);
+
+}
+
+.about-content p{
+
+    margin-bottom:20px;
+
+    color:#555;
+
+}
+/*====================
+    STATS
+=====================*/
+
+.stats{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    padding:70px 8%;
+
+    text-align:center;
+
+}
+
+.stat h2{
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.stat p{
+
+    font-size:1rem;
+
+    letter-spacing:1px;
+
+}
+
+/*====================
+    RESEARCH
+=====================*/
+
+.research{
+
+    background:var(--light);
+
+}
+
+.cards{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card i{
+
+    font-size:55px;
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:var(--dark);
+
+    font-size:1.4rem;
+
+}
+
+.card p{
+
+    color:#666;
+
+}
+
+/*====================
+    PROJECTS
+=====================*/
+
+.project-grid{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.project{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.project:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.project img{
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+.project h3{
+
+    padding:20px 25px 10px;
+
+    color:var(--dark);
+
+}
+
+.project p{
+
+    padding:0 25px 30px;
+
+    color:#666;
+
+}
+
+/*====================
+    PUBLICATIONS
+=====================*/
+
+.publications{
+
+    background:var(--gray);
+
+}
+
+.publication{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:20px auto;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-left:6px solid var(--primary);
+
+    border-radius:12px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.publication:hover{
+
+    transform:translateX(8px);
+
+}
+
+.publication h3{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+}
+
+.publication p{
+
+    color:#555;
+
+}
+
+/*====================
+    TEAM
+=====================*/
+
+.team-grid{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:35px;
+
+}
+
+.member{
+
+    background:#fff;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.member:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.member img{
+
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+.member h3{
+
+    margin-top:20px;
+
+    color:var(--dark);
+
+}
+
+.member p{
+
+    color:#666;
+
+    padding-bottom:25px;
+
+}
+
+/*====================
+    GALLERY
+=====================*/
+
+.gallery{
+
+    background:var(--light);
+
+}
+
+.gallery-grid{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+.gallery-grid img{
+
+    border-radius:16px;
+
+    height:250px;
+
+    object-fit:cover;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/*====================
+    NEWS
+=====================*/
+
+.news{
+
+    background:#fff;
+
+}
+
+.news-card{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:25px auto;
+
+    background:var(--light);
+
+    padding:30px;
+
+    border-radius:16px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.news-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.news-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:12px;
+
+}
+
+/*====================
+    CONTACT
+=====================*/
+
+.contact{
+
+    background:var(--gray);
+
+}
+
+.contact form{
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact input,
+
+.contact textarea{
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:1rem;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.contact textarea{
+
+    resize:vertical;
+
+    min-height:180px;
+
+}
+
+.contact button{
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+/*====================
+    FOOTER
+=====================*/
+
+footer{
+
+    background:var(--dark);
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+/*====================
+    SCROLLBAR
+=====================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--secondary);
+
+}
+
+/*====================
+    SIMPLE FADE ANIMATION
+=====================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero-content,
+.about-content,
+.card,
+.project,
+.member,
+.publication{
+
+    animation:fadeUp .8s ease both;
+
+}
