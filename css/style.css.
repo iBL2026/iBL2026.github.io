@@ -1010,3 +1010,98 @@ filter:brightness(1.05);
 margin:5px;
 
 }
+/*==============================
+      CONTACT PAGE
+==============================*/
+
+.contact-form{
+
+max-width:900px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.form-row{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+padding:16px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+font-size:16px;
+
+font-family:Poppins,sans-serif;
+
+outline:none;
+
+transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+border-color:var(--primary);
+
+box-shadow:0 0 10px rgba(0,128,0,.15);
+
+}
+
+.contact-form textarea{
+
+resize:vertical;
+
+}
+
+.map{
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:var(--shadow);
+
+}
+
+footer a{
+
+font-size:22px;
+
+transition:.3s;
+
+}
+
+footer a:hover{
+
+color:var(--primary);
+
+}
+
+@media(max-width:768px){
+
+.form-row{
+
+grid-template-columns:1fr;
+
+}
+
+}
