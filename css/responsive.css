@@ -1,0 +1,412 @@
+/*=========================================
+      RESPONSIVE.CSS
+      Integrative Biology Laboratory
+=========================================*/
+
+/*==============================
+    LARGE LAPTOPS (1200px)
+===============================*/
+
+@media (max-width:1200px){
+
+.container{
+    width:95%;
+}
+
+.hero h1{
+    font-size:3.5rem;
+}
+
+.about .container{
+    gap:50px;
+}
+
+}
+
+/*==============================
+    LAPTOPS (992px)
+===============================*/
+
+@media (max-width:992px){
+
+header{
+
+    padding:18px 5%;
+
+}
+
+nav ul{
+
+    gap:18px;
+
+}
+
+.hero h1{
+
+    font-size:3rem;
+
+}
+
+.hero p{
+
+    font-size:1.1rem;
+
+}
+
+.about .container{
+
+    grid-template-columns:1fr;
+
+}
+
+.about-image{
+
+    order:1;
+
+}
+
+.about-content{
+
+    order:2;
+
+}
+
+.stats{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.project-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.team-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/*==============================
+        TABLET
+===============================*/
+
+@media (max-width:768px){
+
+.menu-btn{
+
+    display:block;
+
+    color:var(--dark);
+
+}
+
+nav{
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+    background:#fff;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+nav.active{
+
+    max-height:600px;
+
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    padding:20px 0;
+
+}
+
+nav ul li{
+
+    text-align:center;
+
+    margin:15px 0;
+
+}
+
+.hero{
+
+    padding-top:140px;
+
+}
+
+.hero h1{
+
+    font-size:2.5rem;
+
+}
+
+.hero p{
+
+    font-size:1rem;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.btn-outline{
+
+    margin-left:0;
+
+}
+
+.section-title{
+
+    font-size:2rem;
+
+}
+
+.stats{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.project-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.team-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.contact form{
+
+    width:95%;
+
+}
+
+}
+
+/*==============================
+      MOBILE
+===============================*/
+
+@media (max-width:576px){
+
+header{
+
+    padding:15px 20px;
+
+}
+
+.logo span{
+
+    display:none;
+
+}
+
+.hero{
+
+    min-height:90vh;
+
+}
+
+.hero h1{
+
+    font-size:2rem;
+
+    line-height:1.3;
+
+}
+
+.hero p{
+
+    font-size:.95rem;
+
+}
+
+.hero-buttons{
+
+    width:100%;
+
+}
+
+.btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.section-title{
+
+    font-size:1.7rem;
+
+}
+
+.about-content h2{
+
+    font-size:1.8rem;
+
+}
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+.stat h2{
+
+    font-size:2.3rem;
+
+}
+
+.project img{
+
+    height:220px;
+
+}
+
+.member img{
+
+    height:300px;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-grid img{
+
+    height:220px;
+
+}
+
+.contact input,
+
+.contact textarea{
+
+    font-size:.95rem;
+
+}
+
+footer{
+
+    font-size:.9rem;
+
+}
+
+}
+
+/*==============================
+     EXTRA SMALL DEVICES
+===============================*/
+
+@media (max-width:360px){
+
+.hero h1{
+
+    font-size:1.7rem;
+
+}
+
+.hero p{
+
+    font-size:.9rem;
+
+}
+
+.section-title{
+
+    font-size:1.5rem;
+
+}
+
+.logo h2{
+
+    width:45px;
+
+    height:45px;
+
+    font-size:1rem;
+
+}
+
+.btn{
+
+    padding:12px 20px;
+
+}
+
+}
+
+/*==============================
+     LANDSCAPE MOBILE
+===============================*/
+
+@media (max-height:500px) and (orientation:landscape){
+
+.hero{
+
+    min-height:120vh;
+
+}
+
+.hero h1{
+
+    font-size:2.2rem;
+
+}
+
+}
